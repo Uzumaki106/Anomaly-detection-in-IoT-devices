@@ -7,7 +7,7 @@ import joblib
 import matplotlib.pyplot as plt
 
 # Load all models and encoders
-@st.cache_resource
+
 def load_all_models():
     # LSTM Autoencoder models
     lstm_model = load_model('anomaly_files/LSTM/lstm_autoencoder_anomaly_detection.keras')
