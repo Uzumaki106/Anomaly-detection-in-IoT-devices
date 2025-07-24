@@ -1,5 +1,6 @@
 streamlit
 matplotlib
-scikit-learn==2.14.0
-tensorflow 
+numpy<2.0.0
+scikit-learn
+tensorflow==2.14.0
 joblib
