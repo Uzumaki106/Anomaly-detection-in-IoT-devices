@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 def load_all_models():
     # LSTM Autoencoder models
-    lstm_model = load_model('anomaly_files/LSTM/lstm_autoencoder_anomaly_detection.keras')
+    lstm_model = load_model('anomaly_files/LSTM/lstm_autoencoder_anomaly_detection.h5')
     lstm_scaler = joblib.load('anomaly_files/LSTM/standard_scaler.save')
 
     # CNN Fault Detection models
@@ -18,7 +18,7 @@ def load_all_models():
     cnn_encoder = joblib.load('anomaly_files/CNN/label_encoder_cnn.joblib')
 
     # ANN Fault Detection models
-    ann_model = load_model('anomaly_files/ANN/fault_detection_model.keras')
+    ann_model = load_model('anomaly_files/ANN/fault_detection_model.h5')
     ann_encoder = joblib.load('anomaly_files/ANN/label_encoder_aan.joblib')
 
     return lstm_model, lstm_scaler, cnn_model, cnn_encoder, ann_model, ann_encoder
